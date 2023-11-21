@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 
 const Input = () => {
-  const [txtValue, setNUmber] = useState(0);
+  const [txtValue, setTextValue] = useState(0);
 
-  const onChangefuc = () => {
-    dd;
+  const onChangefuc = (e) => {
+    setTextValue(e.target.value);
   };
 
   return (
     <div>
-      <input type="text" value="" onChange={onChangefuc} />
+      <input type="text" value={txtValue} onChange={onChangefuc} />
+      <br />
+      <p>{txtValue}</p>
     </div>
   );
 };
