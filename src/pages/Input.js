@@ -1,23 +1,17 @@
 import React, { useState } from "react";
 
-const Counter = () => {
-  const [num, setNUmber] = useState(0);
+const Input = () => {
+  const [txtValue, setNUmber] = useState(0);
 
-  const increase = () => {
-    setNUmber(num + 1);
-  };
-
-  const decreasae = () => {
-    setNUmber(num - 1);
+  const onChangefuc = () => {
+    dd;
   };
 
   return (
     <div>
-      <button onClick={increase}>+1</button>
-      <button onClick={decreasae}>-1</button>
-      <p>{num}</p>
+      <input type="text" value="" onChange={onChangefuc} />
     </div>
   );
 };
 
-export default Counter;
+export default Input;
